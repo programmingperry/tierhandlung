@@ -13,6 +13,16 @@ public class TierArrayListe implements TierListenInterface {
         this.liste[0] = tier;
     }
 
+    @Override
+    public String getTier(String name) {
+        return "";
+    }
+
+    @Override
+    public int getTier(int index) {
+        return 0;
+    }
+
     public void add(Tier tierNeu) {
         Tier[] listeNeu = new Tier[this.liste.length +1];
 
@@ -64,6 +74,11 @@ public class TierArrayListe implements TierListenInterface {
 
     public void sort() {
         System.out.println("Funktion noch zu impemenieren");
+    }
+
+    @Override
+    public void count() {
+
     }
 
 }
